@@ -1,0 +1,197 @@
+ body {
+    background: hsl(210, 14%, 53%, .15);
+ }
+ .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+    
+}
+
+.text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 1.5em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-family: 'Staatliches', sans-serif;
+    padding: 10px 20px;
+    font-size: 1em;
+    
+}
+
+.outsidevolumebar {
+    border: 2px solid black;
+    height: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding:0.5px;
+    background: hsl(210, 14%, 53%, .5);
+}
+
+.textone {
+    color: hsl(210, 14%, 53%, .15);
+    animation-name: restart;
+    transition: 2s;
+    animation-duration: 12s;
+    animation-fill-mode: forwards;
+    font-family: 'Staatliches', sans-serif;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+    
+
+.volumebar {
+    height: 20px;
+    width: 100px;
+    background: lightgray;
+    display: flex;
+    border: 1px solid gray;
+    transition: 2s;
+    animation-name: bounce;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-duration: 10s;
+    justify-content: flex-end;  
+}
+
+.volumebar:hover {
+    height: 100px;
+    background-color: green;
+   
+}
+
+.button:before {
+ color:aliceblue;
+}
+
+@keyframes restart {
+    0% {
+        color: hsl(210, 14%, 53%, .15);
+    }
+    90% {
+        color: hsl(210, 14%, 53%, .15);
+    }
+    95% {
+        color: hsl(210, 14%, 53%, .15);
+    }
+    100% {
+        color: black;
+    }
+}
+@keyframes bounce {
+    0% {
+        height: 15%;
+        background: green
+    }
+    6% {
+        height: 60%;
+        background: greenyellow;
+    }
+    10% {
+        height: 55%;
+        background: greenyellow;
+    }
+    13% {
+        height: 78%;
+        background: orange;
+    }
+    18% {
+        height: 85%;
+        background: red;
+    }
+    22% {
+        height: 65%;
+        background: greenyellow;
+    }
+    24% {
+        height: 72%;
+        background: orange;
+    }
+    30% {
+        height: 63%;
+        background: greenyellow;
+    }
+    33% {
+        height: 22%;
+        background: green
+    }
+    36% {
+        height: 62%;
+        background: greenyellow;
+    }
+    40% {
+        height: 58%;
+        background: greenyellow;
+    }
+    43% {
+        height: 75%;
+        background: orange;
+    }
+    48% {
+        height: 85%;
+        background: red;
+    }
+    52% {
+        height: 66%;
+        background: greenyellow;
+    }
+    54% {
+        height: 70%;
+        background: orange;
+    }
+    60% {
+        height: 62%;
+        background: greenyellow;
+}
+    63% {
+    height: 20%;
+    background: green
+}
+    66% {
+    height: 60%;
+    background: greenyellow;
+}
+    70% {
+    height: 62%;
+    background: greenyellow;
+}
+    73% {
+    height: 80%;
+    background: orange;
+}
+    78% {
+    height: 84%;
+    background: red;
+}
+    82% {
+    height: 60%;
+    background: greenyellow;
+}
+    84% {
+    height: 78%;
+    background: orange;
+}
+    90% {
+    height: 55%;
+    background: greenyellow;
+}
+    100% {
+        height: 0px;
+        background: gray;
+    }
+}
